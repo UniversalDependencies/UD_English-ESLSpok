@@ -14,8 +14,13 @@
 
 ## References
 
-* (citation)
+**Treebank reference:**
 
+Kyle, K., Eguchi, M., Miller, A., & Sither, T. (2022). *A dependency treebank of spoken second language English*. In *Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Innovative Use of NLP for Building Educational Applications (BEA 2022)*, pp. 39-45., Seattle, USA. Association for Computational Linguistics. <a href="https://aclanthology.org/2022.bea-1.7.pdf" target="_blank">pdf</a>
+
+**Source Corpus Reference:**
+
+Izumi, E., Uchimoto, K., & Isahara, H. (2004). The NICT JLE Corpus: Exploiting the language learners’ speech database for research and education. *International Journal of The Computer,the Internet and Management, 12*(2), 119–125.
 
 # Changelog
 
@@ -29,12 +34,12 @@ Data available since: UD v2.12
 License: CC BY-SA 4.0
 Includes text: yes
 Genre: spoken
-Lemmas: manual native
-UPOS: manual native
-XPOS: not available
+Lemmas: not available
+UPOS: converted
+XPOS: manual native
 Features: manual native
 Relations: manual native
-Contributors: Kyle, Kris
+Contributors: Kyle, Kris; Eguchi, Masaki; Miller, Aaron; Sither, Ted
 Contributing: here
 Contact: kkyle2@uoregon.edu
 ===============================================================================
