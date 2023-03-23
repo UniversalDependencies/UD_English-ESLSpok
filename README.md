@@ -38,7 +38,7 @@ License: CC BY-SA 4.0
 Includes text: yes
 Genre: spoken
 Lemmas: not available
-UPOS: converted
+UPOS: converted with corrections
 XPOS: manual native
 Features: manual native
 Relations: manual native
