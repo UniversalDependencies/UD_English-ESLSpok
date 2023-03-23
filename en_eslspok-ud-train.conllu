@@ -106,12 +106,12 @@
 17	.	_	PUNCT	.	_	13	punct	_	_
 
 # sent_id = file01123.txt_29
-# text = are you ... now ?
-1	are	_	AUX	VBP	_	4	cop	_	_
-2	you	_	PRON	PRP	_	4	nsubj	_	_
-3	...	_	PUNCT	:	_	4	dep	_	_
-4	now	_	ADV	RB	_	0	root	_	_
-5	?	_	PUNCT	.	_	4	punct	_	_
+# text = are you — now ?
+1	are	_	VERB	VBP	_	0	root	_	_
+2	you	_	PRON	PRP	_	1	nsubj	_	_
+3	—	_	PUNCT	:	_	1	punct	_	_
+4	now	_	ADV	RB	_	1	advmod	_	_
+5	?	_	PUNCT	.	_	1	punct	_	_
 
 # sent_id = file00774.txt_43
 # text = there are one cat on the car .
@@ -1184,7 +1184,7 @@
 6	in	_	ADP	IN	_	9	case	_	_
 7	the	_	DET	DT	_	9	det	_	_
 8	movie	_	NOUN	NN	_	9	compound	_	_
-9	theater	_	PUNCT	NN	_	17	punct	_	_
+9	theater	_	NOUN	NN	_	17	obl	_	_
 10	,	_	PUNCT	,	_	9	punct	_	_
 11	yes	_	INTJ	UH	_	17	discourse	_	_
 12	,	_	PUNCT	,	_	17	punct	_	_
@@ -1405,7 +1405,7 @@
 1	So	_	ADV	RB	_	3	advmod	_	_
 2	they	_	PRON	PRP	_	3	nsubj	_	_
 3	get	_	VERB	VBP	_	0	root	_	_
-4	along	_	ADP	RP	_	3	advmod	_	_
+4	along	_	ADV	RB	_	3	advmod	_	_
 5	very	_	ADV	RB	_	6	advmod	_	_
 6	well	_	ADV	RB	_	3	advmod	_	_
 7	.	_	PUNCT	.	_	3	punct	_	_
@@ -1515,7 +1515,7 @@
 11	window	_	NOUN	NN	_	7	nmod	_	_
 12	who	_	PRON	WP	_	13	nsubj	_	_
 13	seems	_	VERB	VBZ	_	3	acl:relcl	_	_
-14	to	_	PART	TO	_	15	mark	_	_
+14	to	_	PART	TO	_	17	mark	_	_
 15	be	_	AUX	VB	_	17	cop	_	_
 16	a	_	DET	DT	_	17	det	_	_
 17	daughter	_	NOUN	NN	_	13	xcomp	_	_
@@ -1751,7 +1751,7 @@
 19	shows	_	NOUN	NNS	_	17	nmod	_	_
 20	on	_	ADP	IN	_	21	case	_	_
 21	T	_	NOUN	NN	_	19	nmod	_	_
-22	V	_	NOUN	NN	_	21	goeswith	_	_
+22	V	_	X	NN	_	21	goeswith	_	_
 23	to	_	PART	TO	_	24	mark	_	_
 24	keep	_	VERB	VB	_	13	xcomp	_	_
 25	me	_	PRON	PRP	_	24	obj	_	_
@@ -1837,7 +1837,7 @@
 # text = The clean up is too heavy .
 1	The	_	DET	DT	_	2	det	_	_
 2	clean	_	VERB	VB	_	6	nsubj	_	_
-3	up	_	ADP	RP	_	2	goeswith	_	_
+3	up	_	X	RP	_	2	goeswith	_	_
 4	is	_	AUX	VBZ	_	6	cop	_	_
 5	too	_	ADV	RB	_	6	advmod	_	_
 6	heavy	_	ADJ	JJ	_	0	root	_	_
@@ -3172,10 +3172,10 @@
 6	because	_	SCONJ	IN	_	8	mark	_	_
 7	there	_	PRON	EX	_	8	expl	_	_
 8	was	_	VERB	VBD	_	3	advcl	_	_
-9	a	_	DET	DT	_	12	det	_	_
-10	mid	_	ADJ	JJ	_	12	goeswith	_	_
-11	-	_	PUNCT	:	_	12	punct	_	_
-12	term	_	NOUN	NN	_	8	nsubj	_	_
+9	a	_	DET	DT	_	8	det	_	_
+10	mid	_	ADJ	JJ	_	8	nsubj	_	_
+11	-	_	X	:	_	10	goeswith	_	_
+12	term	_	X	NN	_	10	goeswith	_	_
 13	,	_	PUNCT	,	_	16	punct	_	_
 14	I	_	PRON	PRP	_	16	nsubj	_	_
 15	just	_	ADV	RB	_	16	advmod	_	_
@@ -3279,8 +3279,8 @@
 3	I	_	PRON	PRP	_	4	nsubj	_	_
 4	ride	_	VERB	VBP	_	0	root	_	_
 5	off	_	ADV	IN	_	4	advmod	_	_
-6	-	_	PUNCT	:	_	5	punct	_	_
-7	road	_	NOUN	NN	_	5	goeswith	_	_
+6	-	_	X	:	_	5	goeswith	_	_
+7	road	_	X	NN	_	5	goeswith	_	_
 8	by	_	ADP	IN	_	10	case	_	_
 9	mountain	_	NOUN	NN	_	10	compound	_	_
 10	bike	_	NOUN	NN	_	4	obl	_	_
@@ -3685,8 +3685,8 @@
 2	Internet	_	NOUN	NN	_	0	root	_	_
 3	,	_	PUNCT	,	_	2	punct	_	_
 4	D	_	NOUN	NN	_	2	list	_	_
-5	V	_	NOUN	NN	_	4	goeswith	_	_
-6	D	_	NOUN	NN	_	4	goeswith	_	_
+5	V	_	X	NN	_	4	goeswith	_	_
+6	D	_	X	NN	_	4	goeswith	_	_
 7	and	_	CCONJ	CC	_	9	cc	_	_
 8	Play	_	PROPN	NNP	_	9	compound	_	_
 9	Station	_	PROPN	NNP	_	4	conj	_	_
@@ -4860,7 +4860,7 @@
 
 # sent_id = file00042.txt_8
 # text = At first , it was very interesting , but gradually , I got tired of researching .
-1	At	_	ADP	IN	_	2	advmod	_	_
+1	At	_	ADV	RB	_	2	advmod	_	_
 2	first	_	ADV	RB	_	7	advmod	_	_
 3	,	_	PUNCT	,	_	7	punct	_	_
 4	it	_	PRON	PRP	_	7	nsubj	_	_
@@ -5061,7 +5061,7 @@
 1	but	_	CCONJ	CC	_	8	cc	_	_
 2	our	_	PRON	PRP$	_	3	nmod:poss	_	_
 3	team	_	NOUN	NN	_	8	nsubj	_	_
-4	mates	_	NOUN	NNS	_	3	goeswith	_	_
+4	mates	_	X	NNS	_	3	goeswith	_	_
 5	are	_	AUX	VBP	_	8	cop	_	_
 6	very	_	ADV	RB	_	7	advmod	_	_
 7	nice	_	ADJ	JJ	_	8	amod	_	_
@@ -5081,7 +5081,7 @@
 
 # sent_id = file00569.txt_72
 # text = Overtime working .
-1	Overtime	_	NOUN	NN	_	2	advmod	_	_
+1	Overtime	_	ADV	NN	_	2	advmod	_	_
 2	working	_	NOUN	NN	_	0	root	_	_
 3	.	_	PUNCT	.	_	2	punct	_	_
 
@@ -9152,7 +9152,7 @@
 4	?	_	PUNCT	.	_	1	punct	_	_
 
 # sent_id = file01256.txt_118
-# text = And we made lots of practical things . ... cards and stuff .
+# text = And we made lots of practical things . — cards and stuff .
 1	And	_	CCONJ	CC	_	3	cc	_	_
 2	we	_	PRON	PRP	_	3	nsubj	_	_
 3	made	_	VERB	VBD	_	0	root	_	_
@@ -9160,8 +9160,8 @@
 5	of	_	ADP	IN	_	7	case	_	_
 6	practical	_	ADJ	JJ	_	7	amod	_	_
 7	things	_	NOUN	NNS	_	4	nmod	_	_
-8	.	_	PUNCT	.	_	3	punct	_	_
-9	...	_	PUNCT	:	_	10	punct	_	_
+8	.	_	PUNCT	.	_	7	punct	_	_
+9	—	_	PUNCT	:	_	7	punct	_	_
 10	cards	_	NOUN	NNS	_	7	appos	_	_
 11	and	_	CCONJ	CC	_	12	cc	_	_
 12	stuff	_	NOUN	NN	_	10	conj	_	_
@@ -10677,8 +10677,8 @@
 21	see	_	VERB	VB	_	16	xcomp	_	_
 22	my	_	PRON	PRP$	_	23	nmod:poss	_	_
 23	co	_	ADJ	JJ	_	21	obj	_	_
-24	-	_	PUNCT	:	_	23	punct	_	_
-25	worker	_	NOUN	NN	_	23	goeswith	_	_
+24	-	_	X	:	_	23	goeswith	_	_
+25	worker	_	X	NN	_	23	goeswith	_	_
 26	and	_	CCONJ	CC	_	28	cc	_	_
 27	my	_	PRON	PRP$	_	28	nmod:poss	_	_
 28	clients	_	NOUN	NNS	_	23	conj	_	_
@@ -11941,7 +11941,7 @@
 3	,	_	PUNCT	,	_	11	punct	_	_
 4	my	_	PRON	PRP$	_	5	nmod:poss	_	_
 5	baggage	_	NOUN	NN	_	11	nsubj	_	_
-6	which	_	PRON	WDT	_	8	mark	_	_
+6	which	_	PRON	WDT	_	8	nsubj	_	_
 7	was	_	AUX	VBD	_	8	aux	_	_
 8	holding	_	VERB	VBG	_	5	acl:relcl	_	_
 9	by	_	ADP	IN	_	10	case	_	_
@@ -12127,7 +12127,7 @@
 # text = Area like , area ?
 1	Area	_	NOUN	NN	_	0	root	_	_
 2	like	_	ADP	IN	_	4	case	_	_
-3	,	_	PUNCT	,	_	1	punct	_	_
+3	,	_	PUNCT	,	_	4	punct	_	_
 4	area	_	NOUN	NN	_	1	nmod	_	_
 5	?	_	PUNCT	.	_	1	punct	_	_
 
@@ -13347,7 +13347,7 @@
 17	gets	_	VERB	VBZ	_	9	conj	_	_
 18	really	_	ADV	RB	_	19	advmod	_	_
 19	warm	_	ADJ	JJ	_	17	obj	_	_
-20	,	_	PUNCT	,	_	24	punct	_	_
+20	,	_	PUNCT	,	_	32	punct	_	_
 21	and	_	CCONJ	CC	_	32	cc	_	_
 22	from	_	ADP	IN	_	24	case	_	_
 23	the	_	DET	DT	_	24	det	_	_
@@ -13607,7 +13607,7 @@
 2	go	_	VERB	VBP	_	0	root	_	_
 3	to	_	PART	TO	_	8	case	_	_
 4	,	_	PUNCT	,	_	8	punct	_	_
-5	ka	_	ADV	FW	_	2	dep	_	_
+5	ka	_	ADV	FW	_	8	dep	_	_
 6	,	_	PUNCT	,	_	8	punct	_	_
 7	a	_	DET	DT	_	8	det	_	_
 8	zoo	_	NOUN	NN	_	2	obl	_	_
@@ -15330,8 +15330,8 @@
 6	we	_	PRON	PRP	_	7	nsubj	_	_
 7	said	_	VERB	VBD	_	0	root	_	_
 8	good	_	INTJ	UH	_	7	obj	_	_
-9	-	_	PUNCT	:	_	10	punct	_	_
-10	bye	_	INTJ	UH	_	8	goeswith	_	_
+9	-	_	X	:	_	8	goeswith	_	_
+10	bye	_	X	UH	_	8	goeswith	_	_
 11	each	_	DET	DT	_	12	det	_	_
 12	other	_	ADJ	JJ	_	7	obl	_	_
 13	and	_	CCONJ	CC	_	14	cc	_	_
@@ -15433,7 +15433,7 @@
 13	,	_	PUNCT	,	_	21	punct	_	_
 14	the	_	DET	DT	_	18	det	_	_
 15	was	_	AUX	VBD	_	19	reparandum	_	_
-16	,	_	PUNCT	,	_	21	punct	_	_
+16	,	_	PUNCT	,	_	18	punct	_	_
 17	mobile	_	ADJ	JJ	_	18	amod	_	_
 18	phone	_	NOUN	NN	_	21	nsubj	_	_
 19	was	_	AUX	VBD	_	21	cop	_	_
@@ -15668,7 +15668,7 @@
 6	.	_	PUNCT	.	_	3	punct	_	_
 
 # sent_id = file00195.txt_78
-# text = yami - nabe is a kind of strange nabe , I think because ....
+# text = yami - nabe is a kind of strange nabe , I think because —
 1	yami	_	ADV	FW	_	3	dep	_	_
 2	-	_	PUNCT	:	_	3	punct	_	_
 3	nabe	_	ADV	FW	_	6	nsubj	_	_
@@ -15681,8 +15681,8 @@
 10	,	_	PUNCT	,	_	12	punct	_	_
 11	I	_	PRON	PRP	_	12	nsubj	_	_
 12	think	_	VERB	VBP	_	6	parataxis	_	_
-13	because	_	SCONJ	IN	_	14	mark	_	_
-14	....	_	PUNCT	:	_	12	obl	_	_
+13	because	_	SCONJ	IN	_	12	mark	_	_
+14	—	_	PUNCT	:	_	12	punct	_	_
 
 # sent_id = file01233.txt_111
 # text = So , you know , it 's not nice to have you contact Cindy for me .
@@ -15744,7 +15744,7 @@
 5	a	_	DET	DT	_	7	det	_	_
 6	big	_	ADJ	JJ	_	7	amod	_	_
 7	T	_	NOUN	NN	_	4	obj	_	_
-8	V.	_	NOUN	NN	_	7	goeswith	_	_
+8	V.	_	X	NN	_	7	goeswith	_	_
 
 # sent_id = file01271.txt_135
 # text = And we prepared for the camp and preparing part was really fun .
@@ -17439,7 +17439,7 @@
 10	.	_	PUNCT	.	_	3	punct	_	_
 
 # sent_id = file01222.txt_109
-# text = My mother made it so I could put into the microwave and just warm the ... in it , set for my brother and father .
+# text = My mother made it so I could put into the microwave and just warm the — in it , set for my brother and father .
 1	My	_	PRON	PRP$	_	2	nmod:poss	_	_
 2	mother	_	NOUN	NN	_	3	nsubj	_	_
 3	made	_	VERB	VBD	_	0	root	_	_
@@ -17454,8 +17454,8 @@
 12	and	_	CCONJ	CC	_	14	cc	_	_
 13	just	_	ADV	RB	_	14	advmod	_	_
 14	warm	_	VERB	VB	_	8	conj	_	_
-15	the	_	DET	DT	_	16	det	_	_
-16	...	_	PUNCT	:	_	14	obj	_	_
+15	the	_	DET	DT	_	14	dep	_	_
+16	—	_	PUNCT	:	_	14	obj	_	_
 17	in	_	ADP	IN	_	18	case	_	_
 18	it	_	PRON	PRP	_	14	obl	_	_
 19	,	_	PUNCT	,	_	20	punct	_	_
@@ -17525,7 +17525,7 @@
 3	work	_	VERB	VB	_	0	root	_	_
 4	in	_	ADP	IN	_	5	case	_	_
 5	C	_	NOUN	NN	_	3	obl	_	_
-6	A	_	DET	NN	_	5	goeswith	_	_
+6	A	_	X	NN	_	5	goeswith	_	_
 7	my	_	PRON	PRP$	_	8	nmod:poss	_	_
 8	job	_	NOUN	NN	_	11	nsubj	_	_
 9	is	_	AUX	VBZ	_	11	cop	_	_
@@ -17569,7 +17569,7 @@
 3	.	_	PUNCT	.	_	1	punct	_	_
 
 # sent_id = file00623.txt_96
-# text = , my managers recommended , " After one week , maybe , you eager to eat Japanese dishes , so this place there are very famous Japanese restaurant and there .... " .
+# text = , my managers recommended , " After one week , maybe , you eager to eat Japanese dishes , so this place there are very famous Japanese restaurant and there — " .
 1	,	_	PUNCT	,	_	4	punct	_	_
 2	my	_	PRON	PRP$	_	3	nmod:poss	_	_
 3	managers	_	NOUN	NNS	_	4	nsubj	_	_
@@ -17598,9 +17598,9 @@
 26	famous	_	ADJ	JJ	_	28	amod	_	_
 27	Japanese	_	ADJ	JJ	_	28	amod	_	_
 28	restaurant	_	NOUN	NN	_	24	nsubj	_	_
-29	and	_	CCONJ	CC	_	31	cc	_	_
-30	there	_	ADV	RB	_	31	advmod	_	_
-31	....	_	PUNCT	:	_	14	conj	_	_
+29	and	_	CCONJ	CC	_	30	cc	_	_
+30	there	_	ADV	RB	_	14	conj	_	_
+31	—	_	PUNCT	:	_	14	punct	_	_
 32	"	_	PUNCT	"	_	14	punct	_	_
 33	.	_	PUNCT	.	_	4	punct	_	_
 
@@ -18679,7 +18679,7 @@
 9	is	_	VERB	VBZ	_	4	conj	_	_
 10	a	_	DET	DT	_	11	det	_	_
 11	T	_	NOUN	NN	_	9	nsubj	_	_
-12	V.	_	NOUN	NN	_	11	goeswith	_	_
+12	V.	_	X	NN	_	11	goeswith	_	_
 
 # sent_id = file01073.txt_22
 # text = But when she speak to her mother , so my grand mother , or her sisters on the phone , she speak in Kansaiben .
@@ -19274,7 +19274,7 @@
 # sent_id = file00248.txt_39
 # text = Good bye .
 1	Good	_	INTJ	UH	_	0	root	_	_
-2	bye	_	INTJ	UH	_	1	goeswith	_	_
+2	bye	_	X	UH	_	1	goeswith	_	_
 3	.	_	PUNCT	.	_	1	punct	_	_
 
 # sent_id = file00904.txt_23
@@ -20597,7 +20597,7 @@
 2	,	_	PUNCT	,	_	4	punct	_	_
 3	this	_	DET	DT	_	4	det	_	_
 4	week	_	NOUN	NN	_	12	obl:tmod	_	_
-5	end	_	NOUN	NN	_	4	goeswith	_	_
+5	end	_	X	NN	_	4	goeswith	_	_
 6	,	_	PUNCT	,	_	4	punct	_	_
 7	so	_	CCONJ	CC	_	12	cc	_	_
 8	it	_	PRON	PRP	_	12	nsubj	_	_
@@ -21578,7 +21578,7 @@
 5	,	_	PUNCT	,	_	8	punct	_	_
 6	but	_	CCONJ	CC	_	8	cc	_	_
 7	I	_	PRON	PRP	_	8	nsubj	_	_
-8	think	_	PUNCT	VBP	_	2	punct	_	_
+8	think	_	VERB	VBP	_	2	conj	_	_
 9	I	_	PRON	PRP	_	10	nsubj	_	_
 10	enjoy	_	VERB	VBP	_	8	ccomp	_	_
 11	playing	_	VERB	VBG	_	10	xcomp	_	_
@@ -21630,7 +21630,7 @@
 15	,	_	PUNCT	,	_	19	punct	_	_
 16	and	_	CCONJ	CC	_	19	cc	_	_
 17	that	_	PRON	DT	_	19	nsubj	_	_
-18	is	_	VERB	VBZ	_	19	conj	_	_
+18	is	_	AUX	VBZ	_	19	cop	_	_
 19	why	_	ADV	WRB	_	2	conj	_	_
 20	I	_	PRON	PRP	_	22	nsubj	_	_
 21	was	_	AUX	VBD	_	22	cop	_	_
@@ -22236,7 +22236,7 @@
 11	two	_	NUM	CD	_	12	nummod	_	_
 12	o'clock	_	NOUN	NN	_	13	compound	_	_
 13	p	_	NOUN	NN	_	9	obl	_	_
-14	m	_	NOUN	NN	_	13	goeswith	_	_
+14	m	_	X	NN	_	13	goeswith	_	_
 
 # sent_id = file00760.txt_23
 # text = It 's probably the climate .

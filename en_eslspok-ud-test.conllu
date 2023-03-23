@@ -2162,11 +2162,11 @@
 5	from	_	ADP	IN	_	7	case	_	_
 6	one	_	NUM	CD	_	7	nummod	_	_
 7	P	_	NOUN	NN	_	4	obl	_	_
-8	M	_	NOUN	NN	_	7	goeswith	_	_
+8	M	_	X	NN	_	7	goeswith	_	_
 9	to	_	PART	TO	_	11	case	_	_
 10	three	_	NUM	CD	_	11	nummod	_	_
 11	P	_	NOUN	NN	_	4	obl	_	_
-12	M.	_	NOUN	NN	_	11	goeswith	_	_
+12	M.	_	X	NN	_	11	goeswith	_	_
 13	And	_	CCONJ	CC	_	21	cc	_	_
 14	three	_	NUM	CD	_	15	nummod	_	_
 15	people	_	NOUN	NNS	_	21	nsubj	_	_
@@ -2250,7 +2250,7 @@
 7	can	_	AUX	MD	_	8	aux	_	_
 8	see	_	VERB	VB	_	0	root	_	_
 9	many	_	ADJ	JJ	_	12	amod	_	_
-10	,	_	PUNCT	,	_	8	punct	_	_
+10	,	_	PUNCT	,	_	12	punct	_	_
 11	many	_	ADJ	JJ	_	12	amod	_	_
 12	kinds	_	NOUN	NNS	_	8	obj	_	_
 13	of	_	ADP	IN	_	14	case	_	_
@@ -2296,7 +2296,7 @@
 8	.	_	PUNCT	.	_	5	punct	_	_
 
 # sent_id = file00287.txt_11
-# text = And also , when I talked to my friends , they would say , " .. " .
+# text = And also , when I talked to my friends , they would say , " Oh " .
 1	And	_	CCONJ	CC	_	13	cc	_	_
 2	also	_	ADV	RB	_	13	advmod	_	_
 3	,	_	PUNCT	,	_	6	punct	_	_
@@ -2312,7 +2312,7 @@
 13	say	_	VERB	VB	_	0	root	_	_
 14	,	_	PUNCT	,	_	13	punct	_	_
 15	"	_	PUNCT	"	_	16	punct	_	_
-16	..	_	PUNCT	:	_	13	obj	_	_
+16	Oh	_	INTJ	UH	_	13	obj	_	_
 17	"	_	PUNCT	"	_	16	punct	_	_
 18	.	_	PUNCT	.	_	13	punct	_	_
 
@@ -2857,7 +2857,7 @@
 5	kind	_	NOUN	NN	_	2	obj	_	_
 6	of	_	ADP	IN	_	7	case	_	_
 7	handicap	_	NOUN	NN	_	5	nmod	_	_
-8	,	_	PUNCT	,	_	2	punct	_	_
+8	,	_	PUNCT	,	_	10	punct	_	_
 9	not	_	PART	RB	_	10	advmod	_	_
 10	physical	_	ADJ	JJ	_	5	amod	_	_
 11	only	_	ADV	RB	_	10	advmod	_	_

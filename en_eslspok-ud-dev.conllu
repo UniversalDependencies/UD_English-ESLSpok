@@ -1200,13 +1200,13 @@
 8	...	_	PUNCT	:	_	4	punct	_	_
 
 # sent_id = file00633.txt_76
-# text = Shinjuku is movie theater in ....
+# text = Shinjuku is movie theater in —
 1	Shinjuku	_	PROPN	NNP	_	4	nsubj	_	_
 2	is	_	AUX	VBZ	_	4	cop	_	_
 3	movie	_	NOUN	NN	_	4	compound	_	_
 4	theater	_	NOUN	NN	_	0	root	_	_
-5	in	_	ADP	IN	_	6	case	_	_
-6	....	_	PUNCT	:	_	4	obl	_	_
+5	in	_	ADP	IN	_	4	case	_	_
+6	—	_	PUNCT	:	_	4	punct	_	_
 
 # sent_id = file00991.txt_42
 # text = But they moved to Okinawa .
@@ -1544,7 +1544,7 @@
 7	came	_	VERB	VBD	_	0	root	_	_
 8	a	_	DET	DT	_	9	det	_	_
 9	motor	_	NOUN	NN	_	7	nsubj	_	_
-10	cycle	_	NOUN	NN	_	9	goeswith	_	_
+10	cycle	_	X	NN	_	9	goeswith	_	_
 11	.	_	PUNCT	.	_	7	punct	_	_
 
 # sent_id = file01105.txt_107
@@ -1667,13 +1667,13 @@
 22	.	_	PUNCT	.	_	7	punct	_	_
 
 # sent_id = file00902.txt_97
-# text = And mister policeman came to ... , and they were explaining what happened there .
+# text = And mister policeman came to — , and they were explaining what happened there .
 1	And	_	CCONJ	CC	_	4	cc	_	_
 2	mister	_	NOUN	NN	_	3	compound	_	_
 3	policeman	_	NOUN	NN	_	4	nsubj	_	_
 4	came	_	VERB	VBD	_	0	root	_	_
-5	to	_	PART	TO	_	6	case	_	_
-6	...	_	PUNCT	:	_	4	obl	_	_
+5	to	_	PART	TO	_	6	obl	_	_
+6	—	_	PUNCT	:	_	11	punct	_	_
 7	,	_	PUNCT	,	_	11	punct	_	_
 8	and	_	CCONJ	CC	_	11	cc	_	_
 9	they	_	PRON	PRP	_	11	nsubj	_	_
@@ -1855,7 +1855,7 @@
 37	of	_	ADP	IN	_	39	case	_	_
 38	that	_	DET	DT	_	39	det	_	_
 39	item	_	NOUN	NN	_	36	nmod	_	_
-40	is	_	AUX	VBZ	_	42	nsubj	_	_
+40	is	_	AUX	VBZ	_	42	cop	_	_
 41	not	_	PART	RB	_	42	advmod	_	_
 42	what	_	PRON	WP	_	32	ccomp	_	_
 43	they	_	PRON	PRP	_	44	nsubj	_	_
@@ -2034,7 +2034,7 @@
 5	.	_	PUNCT	.	_	1	punct	_	_
 
 # sent_id = file00554.txt_125
-# text = So I do n't really like buy stuff like I ... something ....
+# text = So I do n't really like buy stuff like I — something —
 1	So	_	ADV	RB	_	7	advmod	_	_
 2	I	_	PRON	PRP	_	7	nsubj	_	_
 3	do	_	AUX	VBP	_	7	aux	_	_
@@ -2043,11 +2043,11 @@
 6	like	_	INTJ	UH	_	7	discourse	_	_
 7	buy	_	VERB	VB	_	0	root	_	_
 8	stuff	_	NOUN	NN	_	7	obj	_	_
-9	like	_	INTJ	UH	_	7	discourse	_	_
-10	I	_	PRON	PRP	_	11	nsubj	_	_
-11	...	_	PUNCT	:	_	7	parataxis	_	_
+9	like	_	INTJ	UH	_	12	case	_	_
+10	I	_	PRON	PRP	_	12	reparandum	_	_
+11	—	_	PUNCT	:	_	7	punct	_	_
 12	something	_	NOUN	NN	_	11	obj	_	_
-13	....	_	PUNCT	:	_	7	punct	_	_
+13	—	_	PUNCT	:	_	7	punct	_	_
 
 # sent_id = file00075.txt_92
 # text = or no .
