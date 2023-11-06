@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 04abe686385f14a9a6f68784bd723a6b60ded594
+commit e9726a6a7d6913193d90edb45a4cb549235c5b16
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 9 00:14:39 2023 +0200
+Date:   Sat Nov 4 17:10:55 2023 +0100
 Evaluating the following revision of UD_English-ESLSpok:
-commit 379c8630a901a69acbfa00633e50e12eac4a2f4a
+commit ba0528aefe7c0654f2e92bac1485d94968944e6b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 9 07:18:00 2023 +0200
+Date:   Tue May 9 09:54:03 2023 +0200
 Size: counted 21312 of 21312 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.11854058871596.
 Size: maximum value 13.815511 is for 1000000 words or more.
