@@ -1,10 +1,13 @@
 # Summary
 
-This repository includes the Dependency Treebank of Spoken L2 English (SL2E), which consists of Universal Dependency annotations for a random sample of sentences from the <a href="https://alaginrc.nict.go.jp/nict_jle/index_E.html" target="_blank">NICT JLE</a>, a corpus of spoken second language English. <a href="https://github.com/LCR-ADS-Lab/SL2E-Dependency-Treebank" target="_blank">The homepage of the project is here.</a>
+This repository includes the Dependency Treebank of Spoken L2 English (SL2E), which consists of Universal Dependency annotations for a random sample of sentences from the <a href="https://alaginrc.nict.go.jp/nict_jle/index_E.html" target="_blank">NICT JLE</a>, a corpus of spoken second language English from oral proficiency interviews. <a href="https://github.com/LCR-ADS-Lab/SL2E-Dependency-Treebank" target="_blank">The homepage of the project is here.</a>
 
 
 # Introduction
 This treebank is a part of a larger effort to make more treebank data that represents second language (L2) use publicly available. 
+
+SL2E consists of a random sample of sentences from the National Institute of Information and Communications Technology Japanese Learner English (NICT JLE) corpus (Izumi et al., 2004). NICT JLE includes transcripts of oral proficiency interviews (OPI). Prior to sampling, all interviewer language was removed, leaving only utterances produced by second language speakers. The corpus includes a range of L2 English proficiency levels (mid-beginner to lower advanced). In total, the annotated portion of the corpus includes 7,412 sentences (70,016 tokens) annotated for Penn POS
+tags (Santorini et al., 1990), of which 2,320 sentences (21,312 tokens) are also annotated for Universal Dependencies (Nivre et al, 2020).
 
 Fine-grained part of speech tags (XPOS) were based on the Penn Treebank Tagset and were manually annotated from scratch by at least two annotators. The XPOS annotation guidelines <a href="https://kristopherkyle.github.io/L2-Annotation-Project/anno_overview.html" target="_blank">can be found here</a>. Dependency annotations followed the Universal Dependencies (version 2.0) and were also manually annotated from scratch by at least two trained annotators. Supplemental annotation guidelines <a href="https://kristopherkyle.github.io/L2-Annotation-Project/dep_anno_overview.html" target="_blank">can be found here</a>. 
 
