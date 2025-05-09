@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_English-ESLSpok:
-commit 1b1f202c4984dff47cc52de3a431bce684fb93bc
+commit c30cd0460aeb6d415542692e974a43e6f34964c5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 12:09:03 2024 +0200
+Date:   Mon Nov 11 15:16:44 2024 +0100
 Size: counted 21312 of 21312 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.11854058871596.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,40 +20,59 @@ Features: source of annotation (from README) factor is 1.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Udapi:
-               TOTAL       7210
-Udapi: found 7210 bugs.
+               TOTAL       7204
+Udapi: found 7204 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 21312 words.
-Genres: found 1 out of 17 known.
+Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-dev.conllu
-*** PASSED ***
+[Line 2101 Sent file01101.txt_190 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 2542 Sent file01211.txt_5 Node 14]: [L3 Warning fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
+[Line 2542 Sent file01211.txt_5 Node 14]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
+Syntax errors: 1
+Warnings: 2
+*** FAILED *** with 1 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-test.conllu
+[Line 237 Sent file00253.txt_20 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 718 Sent file01251.txt_74 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'all right' does not have the 'ExtPos' feature
+[Line 724 Sent file01224.txt_93 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'After all' does not have the 'ExtPos' feature
+[Line 1879 Sent file00869.txt_180 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'due to' does not have the 'ExtPos' feature
 [Line 2153 Sent file00527.txt_55 Node 5]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 2152 Sent file00527.txt_55 Node 4]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-Warnings: 2
+Warnings: 6
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-train.conllu
 [Line 800 Sent file00808.txt_194 Node 3]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 799 Sent file00808.txt_194 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1145 Sent file00666.txt_49 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'rather than' does not have the 'ExtPos' feature
+[Line 1301 Sent file00346.txt_20 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
+[Line 1301 Sent file00346.txt_20 Node 3]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
 [Line 1593 Sent file01024.txt_93 Node 14]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1592 Sent file01024.txt_93 Node 13]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1594 Sent file01024.txt_93 Node 15]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1592 Sent file01024.txt_93 Node 13]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 4335 Sent file01145.txt_15 Node 9]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 4333 Sent file01145.txt_15 Node 7]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 9428 Sent file00155.txt_97 Node 2]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 9427 Sent file00155.txt_97 Node 1]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1758 Sent file01271.txt_21 Node 26]: [L3 Warning fixed-without-extpos] Fixed expression 'up to' does not have the 'ExtPos' feature
+[Line 2489 Sent file00054.txt_106 Node 30]: [L3 Warning fixed-without-extpos] Fixed expression 'in order' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 26
-*** PASSED ***
-Validity: 1
+[Line 4678 Sent file00320.txt_180 Node 3]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
+[Line 12428 Sent file00127.txt_65 Node 10]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'at'
+[Line 13956 Sent file00986.txt_71 Node 10]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
+[Line 16001 Sent file01267.txt_15 Node 1]: [L3 Syntax rel-upos-case] 'case' should not be 'ADJ' word 'Such'
+[Line 19221 Sent file00668.txt_25 Node 2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
+[Line 21918 Sent file01206.txt_19 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'kind'
+Syntax errors: 7
+Warnings: 53
+*** FAILED *** with 7 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.01) = 0.000769230769230769
-(weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
+(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
 (weight=0.256410256410256) * (score{size}=0.442874735830069) = 0.113557624571813
 (weight=0.0512820512820513) * (score{split}=0.34) = 0.0174358974358974
 (weight=0.0769230769230769) * (score{tags}=0.847058823529412) = 0.065158371040724
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.918918918918919) = 0.0706860706860707
-(TOTAL score=0.275978235227717) * (availability=1) * (validity=1) = 0.275978235227717
-STARS = 1.5
-UD_English-ESLSpok	0.275978235227717	1.5
+(TOTAL score=0.275726852623394) * (availability=1) * (validity=0.01) = 0.00275726852623394
+STARS = 0
+UD_English-ESLSpok	0.00275726852623394	0
