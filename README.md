@@ -36,6 +36,7 @@ Izumi, E., Uchimoto, K., & Isahara, H. (2004). The NICT JLE Corpus: Exploiting t
 Data available since: UD v2.12
 License: CC BY-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: spoken
 Lemmas: not available
 UPOS: converted with corrections
