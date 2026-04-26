@@ -2161,11 +2161,11 @@
 4	starts	_	VERB	VBZ	_	0	root	_	_
 5	from	_	ADP	IN	_	7	case	_	_
 6	one	_	NUM	CD	_	7	nummod	_	_
-7	P	_	NOUN	NN	_	4	obl	_	_
+7	P	_	NOUN	NN	Typo=Yes	4	obl	_	_
 8	M	_	X	NN	_	7	goeswith	_	_
 9	to	_	PART	TO	_	11	case	_	_
 10	three	_	NUM	CD	_	11	nummod	_	_
-11	P	_	NOUN	NN	_	4	obl	_	_
+11	P	_	NOUN	NN	Typo=Yes	4	obl	_	_
 12	M.	_	X	NN	_	11	goeswith	_	_
 13	And	_	CCONJ	CC	_	21	cc	_	_
 14	three	_	NUM	CD	_	15	nummod	_	_

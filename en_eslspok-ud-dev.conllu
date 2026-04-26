@@ -1543,7 +1543,7 @@
 6	there	_	PRON	RB	_	7	expl	_	_
 7	came	_	VERB	VBD	_	0	root	_	_
 8	a	_	DET	DT	_	9	det	_	_
-9	motor	_	NOUN	NN	_	7	nsubj	_	_
+9	motor	_	NOUN	NN	Typo=Yes	7	nsubj	_	_
 10	cycle	_	X	NN	_	9	goeswith	_	_
 11	.	_	PUNCT	.	_	7	punct	_	_
 
