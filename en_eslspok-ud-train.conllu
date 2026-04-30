@@ -1750,7 +1750,7 @@
 18	of	_	ADP	IN	_	19	case	_	_
 19	shows	_	NOUN	NNS	_	17	nmod	_	_
 20	on	_	ADP	IN	_	21	case	_	_
-21	T	_	NOUN	NN	Typo=Yes	19	nmod	_	_
+21	T	_	NOUN	NN	_	19	nmod	_	_
 22	V	_	X	NN	_	21	goeswith	_	_
 23	to	_	PART	TO	_	24	mark	_	_
 24	keep	_	VERB	VB	_	13	xcomp	_	_
@@ -1836,7 +1836,7 @@
 # sent_id = file00366.txt_38
 # text = The clean up is too heavy .
 1	The	_	DET	DT	_	2	det	_	_
-2	clean	_	VERB	VB	Typo=Yes	6	nsubj	_	_
+2	clean	_	VERB	VB	_	6	nsubj	_	_
 3	up	_	X	RP	_	2	goeswith	_	_
 4	is	_	AUX	VBZ	_	6	cop	_	_
 5	too	_	ADV	RB	_	6	advmod	_	_
@@ -3173,7 +3173,7 @@
 7	there	_	PRON	EX	_	8	expl	_	_
 8	was	_	VERB	VBD	_	3	advcl	_	_
 9	a	_	DET	DT	_	8	det	_	_
-10	mid	_	ADJ	JJ	Typo=Yes	8	nsubj	_	_
+10	mid	_	ADJ	JJ	_	8	nsubj	_	_
 11	-	_	X	:	_	10	goeswith	_	_
 12	term	_	X	NN	_	10	goeswith	_	_
 13	,	_	PUNCT	,	_	16	punct	_	_
@@ -3684,7 +3684,7 @@
 1	And	_	CCONJ	CC	_	2	cc	_	_
 2	Internet	_	NOUN	NN	_	0	root	_	_
 3	,	_	PUNCT	,	_	2	punct	_	_
-4	D	_	NOUN	NN	Typo=Yes	2	list	_	_
+4	D	_	NOUN	NN	_	2	list	_	_
 5	V	_	X	NN	_	4	goeswith	_	_
 6	D	_	X	NN	_	4	goeswith	_	_
 7	and	_	CCONJ	CC	_	9	cc	_	_
@@ -5060,7 +5060,7 @@
 # text = but our team mates are very nice people .
 1	but	_	CCONJ	CC	_	8	cc	_	_
 2	our	_	PRON	PRP$	_	3	nmod:poss	_	_
-3	team	_	NOUN	NN	Typo=Yes	8	nsubj	_	_
+3	team	_	NOUN	NN	_	8	nsubj	_	_
 4	mates	_	X	NNS	_	3	goeswith	_	_
 5	are	_	AUX	VBP	_	8	cop	_	_
 6	very	_	ADV	RB	_	7	advmod	_	_
@@ -22235,7 +22235,7 @@
 10	at	_	ADP	IN	_	13	case	_	_
 11	two	_	NUM	CD	_	12	nummod	_	_
 12	o'clock	_	NOUN	NN	_	13	compound	_	_
-13	p	_	NOUN	NN	Typo=Yes	9	obl	_	_
+13	p	_	NOUN	NN	_	9	obl	_	_
 14	m	_	X	NN	_	13	goeswith	_	_
 
 # sent_id = file00760.txt_23
