@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_English-ESLSpok:
-commit 88d2f31027ba638b68a0df8ef1d4bd70fc916b2d
-Merge: 4f6ad1a 8bcea74
+commit 6afcc4509ec6af9751e7dc0beb0dc6dc4ee8fa7c
+Merge: 51b8a8e f4d0ebe
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'en_eslspok'
@@ -25,45 +25,57 @@ Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-dev.conllu
-[Line 1944 Sent file01243.txt_239]: [L3 Warning obl-should-be-nmod] The parent (node [24] 'sunshine') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 2101 Sent file01101.txt_190]: [L3 Warning fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
-[Line 2542 Sent file01211.txt_5]: [L3 Warning fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
-[Line 2542 Sent file01211.txt_5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-Syntax errors: 1
-Warnings: 3
-*** FAILED *** with 1 errors
+[Line 1944 Sent file01243.txt_239]: [L3 SYNTAX obl-should-be-nmod] The parent (node [24] 'sunshine') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2101 Sent file01101.txt_190]: [L3 WARNING fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 2542 Sent file01211.txt_5]: [L3 WARNING fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
+[Line 2542 Sent file01211.txt_5]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+Warnings: 2
+SYNTAX errors: 2
+*** FAILED *** with 2 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-test.conllu
-[Line 237 Sent file00253.txt_20]: [L3 Warning fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
-[Line 718 Sent file01251.txt_74]: [L3 Warning fixed-without-extpos] Fixed expression 'all right' does not have the 'ExtPos' feature
-[Line 724 Sent file01224.txt_93]: [L3 Warning fixed-without-extpos] Fixed expression 'After all' does not have the 'ExtPos' feature
-[Line 1879 Sent file00869.txt_180]: [L3 Warning fixed-without-extpos] Fixed expression 'due to' does not have the 'ExtPos' feature
-[Line 2153 Sent file00527.txt_55]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 2152 Sent file00527.txt_55]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 237 Sent file00253.txt_20]: [L3 WARNING fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 718 Sent file01251.txt_74]: [L3 WARNING fixed-without-extpos] Fixed expression 'all right' does not have the 'ExtPos' feature
+[Line 724 Sent file01224.txt_93]: [L3 WARNING fixed-without-extpos] Fixed expression 'After all' does not have the 'ExtPos' feature
+[Line 1879 Sent file00869.txt_180]: [L3 WARNING fixed-without-extpos] Fixed expression 'due to' does not have the 'ExtPos' feature
+[Line 2153 Sent file00527.txt_55]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 2152 Sent file00527.txt_55]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 Warnings: 6
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang en --max-err=10 UD_English-ESLSpok/en_eslspok-ud-train.conllu
-[Line 800 Sent file00808.txt_194]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 799 Sent file00808.txt_194]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1145 Sent file00666.txt_49]: [L3 Warning fixed-without-extpos] Fixed expression 'rather than' does not have the 'ExtPos' feature
-[Line 1301 Sent file00346.txt_20]: [L3 Warning fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
-[Line 1301 Sent file00346.txt_20]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-[Line 1593 Sent file01024.txt_93]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1592 Sent file01024.txt_93]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1594 Sent file01024.txt_93]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1592 Sent file01024.txt_93]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1758 Sent file01271.txt_21]: [L3 Warning fixed-without-extpos] Fixed expression 'up to' does not have the 'ExtPos' feature
-[Line 2489 Sent file00054.txt_106]: [L3 Warning fixed-without-extpos] Fixed expression 'in order' does not have the 'ExtPos' feature
-...suppressing further errors regarding Warning
-[Line 4678 Sent file00320.txt_180]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-[Line 12428 Sent file00127.txt_65]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('at')
-[Line 13956 Sent file00986.txt_71]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-[Line 16001 Sent file01267.txt_15]: [L3 Syntax rel-upos-case] 'case' should not be 'ADJ' ('Such')
-[Line 19221 Sent file00668.txt_25]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-[Line 21918 Sent file01206.txt_19]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
-Syntax errors: 7
-Warnings: 54
-*** FAILED *** with 7 errors
+[Line 800 Sent file00808.txt_194]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 799 Sent file00808.txt_194]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1145 Sent file00666.txt_49]: [L3 WARNING fixed-without-extpos] Fixed expression 'rather than' does not have the 'ExtPos' feature
+[Line 1301 Sent file00346.txt_20]: [L3 WARNING fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
+[Line 1301 Sent file00346.txt_20]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+[Line 1593 Sent file01024.txt_93]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1592 Sent file01024.txt_93]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1594 Sent file01024.txt_93]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1592 Sent file01024.txt_93]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1758 Sent file01271.txt_21]: [L3 WARNING fixed-without-extpos] Fixed expression 'up to' does not have the 'ExtPos' feature
+[Line 2489 Sent file00054.txt_106]: [L3 WARNING fixed-without-extpos] Fixed expression 'in order' does not have the 'ExtPos' feature
+[Line 2781 Sent file00034.txt_138]: [L3 WARNING fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 3604 Sent file00044.txt_89]: [L3 WARNING fixed-without-extpos] Fixed expression 'because of' does not have the 'ExtPos' feature
+[Line 3622 Sent file00676.txt_101]: [L3 WARNING fixed-without-extpos] Fixed expression 'rather than' does not have the 'ExtPos' feature
+[Line 4335 Sent file01145.txt_15]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 4333 Sent file01145.txt_15]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 4678 Sent file00320.txt_180]: [L3 WARNING fixed-without-extpos] Fixed expression 'kind of' does not have the 'ExtPos' feature
+[Line 4678 Sent file00320.txt_180]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+[Line 6126 Sent file00051.txt_54]: [L3 WARNING fixed-without-extpos] Fixed expression 'of course' does not have the 'ExtPos' feature
+[Line 6749 Sent file00127.txt_121]: [L3 WARNING fixed-without-extpos] Fixed expression 'now on' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 8813 Sent file01274.txt_170]: [L3 SYNTAX obl-should-be-nmod] The parent (node [12] 'Shibuya') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 9428 Sent file00155.txt_97]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9427 Sent file00155.txt_97]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding WARNING/MORPHO
+[Line 12428 Sent file00127.txt_65]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('at')
+[Line 13956 Sent file00986.txt_71]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+[Line 16001 Sent file01267.txt_15]: [L3 SYNTAX rel-upos-case] 'case' should not be 'ADJ' ('Such')
+[Line 19221 Sent file00668.txt_25]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+[Line 21918 Sent file01206.txt_19]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('kind')
+Warnings: 53
+SYNTAX errors: 8
+*** FAILED *** with 8 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=0.01) = 0.00111111111111111
